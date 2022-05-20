@@ -1,4 +1,135 @@
-.profile--pic {
-  max-width: 200px;
-  border-radius: 10%;
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #a3de5f;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+  padding: 20px;
+  font-family: 'Roboto Mono', monospace;
+  color: #222222;
+  font-size: 16px;
+  background-color: #a3de5f;
+}
+
+.navigation {
+  display: flex;
+  justify-content: left;
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+.navigation a {
+  color: #222222;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  font-weight: bold;
+  text-shadow: 1px 1px gray;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  background-color: #e1ebd6;
+}
+
+.content__heading {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.content__about {
+  width: 80%;
+  padding: 20px 0;
+}
+
+.content__image img {
+  width: 80%;
+  border-radius: 6px;
+}
+
+.content__idea {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 30px;
+}
+
+.content__idea__card1 {
+  width: 45%;
+  text-align: center;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 30px 20px;
+}
+
+.content__idea__card1 a {
+  display: block;
+  color: #222222;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 20px 0;
+  background-color: #e1ebd6;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.content__idea__card1 a:hover {
+  background-color: #a3de5f;
+}
+.content__idea__card2 {
+  width: 45%;
+  text-align: center;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 30px 20px;
+}
+
+.content__idea__card2 a {
+  display: block;
+  color: #222222;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 20px 0;
+  background-color: #e1ebd6;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.content__idea__card2 a:hover {
+  background-color: #a3de5f;
+}
+
+@media (max-width: 900px) {
+  .content__idea {
+    flex-direction: column;
+  }
+  .content__idea__card1 {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .content__idea__card2 {
+    width: 95%;
+  }
 }
