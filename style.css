@@ -40,6 +40,23 @@
   text-shadow: 1px 1px gray;
 }
 
+.nav-btn {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  background-image: url('./img/menu.png');
+  background-size: contain;
+
+  cursor: pointer;
+}
+
+.nav-btn:focus {
+  outline: none;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -118,6 +135,30 @@
 
 .content__idea__card2 a:hover {
   background-color: #a3de5f;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+  }
+
+  nav {
+    width: initial;
+  }
+
+  nav a {
+    display: inline-block;
+
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+  .nav-closed {
+    display: block;
+  }
 }
 
 @media (max-width: 900px) {
