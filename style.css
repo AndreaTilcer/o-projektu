@@ -85,6 +85,10 @@
   border-radius: 6px;
 }
 
+#andy {
+  max-width: 598px;
+}
+
 .content__idea {
   display: flex;
   justify-content: space-between;
