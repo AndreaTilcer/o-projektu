@@ -1,5 +1,3 @@
-import './style.css';
-
 console.log('funguju!');
 
 document.querySelector('#nav-btn').addEventListener('click', () => {
